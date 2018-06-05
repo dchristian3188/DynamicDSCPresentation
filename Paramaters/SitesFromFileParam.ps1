@@ -6,6 +6,7 @@ Configuration SitesFromFileParam
         $SiteFile
     )
     Import-DscResource -ModuleName xWebAdministration
+    Import-DscResource -ModuleName PSDesiredStateConfiguration
 
     if (-not(Test-Path -Path $siteFile))
     {
